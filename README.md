@@ -1,4 +1,47 @@
-## Welcome to GitHub Pages
+### Welcome to Roop's GitHub Pages
+
+
+## Test Prep plans: 
+- Do all of the FRQs that I missed in Tri 2, or at least the ones I can.
+- Finally finish the Random Passcode generator that I was supposed to turn in at the end of tri 2.
+- Link to password generator: (https://replit.com/@JSinghSD/CSACollegeboardFRQ)
+
+## Tech Talk 1- 3/16/22
+- Learned about circle queues. (Seven Slimy snakes)
+- when queuing new values, the head remains constant and the tail keeps being updated to add to it.
+- When Dequeuing values, the head is constantly being removed and the next value in the code becomes the head. The tail remains constant.
+
+## Tech Talk 0-
+- Learned about Data Structures
+- Used for storing data. Duh. 
+- Used very commonly while coding.
+- We plan to use it to store Neurosience data from the exel sheets that we are ripping the data from.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 You can use the [editor on GitHub](https://github.com/LordRoop/Personal_Repo_1/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -36,26 +79,3 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-
-
-
-
-
-
-
-Test Prep plans: 
-Do all of the FRQs that I missed in Tri 2, or at least the ones I can.
-Finally finish the Random Passcode generator that I was supposed to turn in at the end of tri 2.
-Link to password generator: (https://replit.com/@JSinghSD/CSACollegeboardFRQ)
-
-Tech Talk 1- 3/16/22
-Learned about circle queues. (Seven Slimy snakes)
-when queuing new values, the head remains constant and the tail keeps being updated to add to it.
-When Dequeuing values, the head is constantly being removed and the next value in the code becomes the head. The tail remains constant.
-You can return different values in the queue by 
-
-Tech Talk 0-
-Learned about Data Structures
-Used for storing data. Duh. 
-Used very commonly while coding.
-We plan to use it to store Neurosience data from the exel sheets that we are ripping the data from.
