@@ -1,0 +1,25 @@
+{% include navigation.html %}
+
+# GitHub Activity
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Profile</th>
+    <th>Issues</th>
+    <th>Commits</th>
+  </tr>
+  <tr>
+    <td>John Mortensen</td>
+    <td><a href="https://github.com/LordRoop" target="_blank">Profile</a></td>
+    <td><a href="https://github.com/LordRoop/Personal_Repo_1/issues" target="_blank">Issues</a></td>
+    <td><a href="https://github.com/LordRoop/Personal_Repo_1/commits/gh-pages" target="_blank">Commits</a></td>
+  </tr>
+</table>
+
+# About Jagroop Vij
+WebSite [ {{ site.webserver }} ]({{ site.webserver }})
+
+Email [ {{ site.email }} ](mailto:{{ site.email }})
+
+Twitter [ {{ site.twitter }} ]({{ site.twitter }})
