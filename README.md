@@ -1,5 +1,10 @@
 # Welcome to Roop's GitHub Pages
 
+## Tech Talk 2- 3/23/22
+- Making a calculator
+- Taked about numbers vs opertors
+- sorted into 
+
 ## Tech Talk 1- 3/16/22
 - Learned about circle queues. (Seven Slimy snakes)
 - when queuing new values, the head remains constant and the tail keeps being updated to add to it.
