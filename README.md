@@ -2,7 +2,7 @@
 
 ## Tech Talk 2- 3/23/22
 - Making a calculator
-- Taked about numbers vs opertors
+- Taked about numbers vs operators
 - sorted into 
 
 ## Tech Talk 1- 3/16/22
