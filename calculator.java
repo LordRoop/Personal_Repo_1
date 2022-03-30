@@ -1,14 +1,20 @@
-package tt2;
+package com.nighthawk.csa.hacks;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import tt2.Stack;
+import com.nighthawk.csa.utility.LinkedLists.Stack;
 
+/* In mathematics,
+    an expression or mathematical expression is a finite combination of symbols that is well-formed
+    according to rules that depend on the context.
 
-import java.util.*;
-
+   In computers,
+    expression can be hard to calculate with precedence rules and user input errors
+    to handle computer math we often convert strings into reverse polish notation
+    to handle errors we perform try / catch or set default conditions to trap errors
+     */
 public class Calculator {
     // Key instance variables
     private final String expression;
@@ -20,8 +26,6 @@ public class Calculator {
     private final Map<String, Integer> OPERATORS = new HashMap<>();
     {
         // Map<"token", precedence>
-        OPERATORS.put("sqrt", 2);
-        OPERATORS.put("^", 2);
         OPERATORS.put("*", 3);
         OPERATORS.put("/", 3);
         OPERATORS.put("%", 3);
@@ -38,7 +42,7 @@ public class Calculator {
         SEPARATORS.put(")", 0);
     }
 
-    // Create a 1 argument constructor expecting an expression
+    // Create a 1 argument constructor expecting a mathematical expression
     public Calculator(String expression) {
         // original input
         this.expression = expression;
@@ -46,22 +50,22 @@ public class Calculator {
         // parse expression into terms
         this.termTokenizer();
 
-        // place terms into rpn
+        // place terms into reverse polish notation
         this.tokensToReversePolishNotation();
 
-        // calculate rpn
+        // calculate reverse polish notation
         this.rpnToResult();
     }
 
     // Test if token is an operator
     private boolean isOperator(String token) {
-        // find token in hash map
+        // find the token in the hash map
         return OPERATORS.containsKey(token);
     }
 
-    // Test if token is seperator
+    // Test if token is an seperator
     private boolean isSeperator(String token) {
-        // find token in the hash map
+        // find the token in the hash map
         return SEPARATORS.containsKey(token);
     }
 
@@ -130,8 +134,6 @@ public class Calculator {
                 case "*":
                 case "/":
                 case "%":
-                case "^":
-                case "sqrt":
                     // While stack
                     // not empty AND stack top element
                     // and is an operator
@@ -160,52 +162,47 @@ public class Calculator {
     // Takes RPN and produces a final result
     private void rpnToResult()
     {
-        // Stack used to hold calculation while process RPN
+        // stack is used to hold calculation while using RPN rules for calculation
         Stack stack = new Stack();
 
-        // for loop to process RPN
-        for (String token: this.reverse_polish) {
-            // If the token is a number
-            if (!isOperator(token)) {
-                //Push number to stack
+        // reverse_polish is processed and ultimately used to produce final result
+        for (String token : this.reverse_polish)
+        {
+            // If the token is a number push it onto the stack
+            if (!isOperator(token))
+            {
                 stack.push(token);
             }
-            //else
-            else {
+            else
+            {
                 // Pop the two top entries
-                Double x1 = Double.valueOf((String)stack.pop());
-                Double x0 = Double.valueOf((String)stack.pop());
+                Double operand1 = Double.valueOf( (String)stack.pop() );
+                Double operand0 = Double.valueOf( (String)stack.pop() );
 
-                // Based off of Token operator calculate result
+                // Calculate intermediate results
                 Double result;
-                switch (token) {
+                switch (token) {    // token is the operator
                     case "+":
-                        result = x0 + x1;
+                        result = operand0 + operand1;
                         break;
                     case "-":
-                        result = x0 - x1;
+                        result = operand0 - operand1;
                         break;
                     case "*":
-                        result = x0 * x1;
+                        result = operand0 * operand1;
                         break;
                     case "/":
-                        result = x0 / x1;
+                        result = operand0 / operand1;
                         break;
                     case "%":
-                        result = x0 % x1;
+                        result = operand0 % operand1;
                         break;
-                    case "^":
-                        result = Math.pow(x0, x1);
-                        break;
-                    case "sqrt":
-                        result = Math.sqrt(x0);
-                        break;
-                    default:
+                    default:    //  replace this code with errors
                         result = 0.0;
                 }
 
-                // Push result back onto the stack
-                stack.push(String.valueOf(result));
+                // Push intermediate result back onto the stack
+                stack.push( String.valueOf( result ));
             }
         }
         // Pop final result and set as final result for expression
@@ -266,26 +263,5 @@ public class Calculator {
         Calculator allMath3 = new Calculator("200%(300+5+300)/200+1*100");
         System.out.println("All Math3\n" + allMath3);
 
-        System.out.println();
-
-        Calculator expMath = new Calculator("8 ^ 4");
-        System.out.println("Exponential Math\n" + expMath);
-
-        System.out.println();
-
-        String userInput;
-        Scanner input = new Scanner(System.in);
-
-        System.out.println("What equation would you like to calculate?");
-
-        userInput = input.next();
-        Calculator test = new Calculator(userInput);
-        System.out.print("Result:\n" + test);
-
-
-        /** working on bug
-        Calculator sqrtMath = new Calculator("sqrt9");
-        System.out.println("Square Root Math\n" + sqrtMath);
-        System.out.println();*/
     }
 }
