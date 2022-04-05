@@ -40,13 +40,7 @@ public class Main {   //Everything in Java is inside a class, Squigs, Squigalies
         System.out.println("-------------------------\n");
         System.out.println("Choose from these choices");
         System.out.println("-------------------------\n");
-        System.out.println("1 - Hello");
-        System.out.println("2 - Printy");
-        System.out.println("3 - Loopy");
-        System.out.println("4 - Classy Print");
-        System.out.println("5 - Classy Poem");
-        System.out.println("6 - Binary");
-        System.out.println("7 - Termy");
+        System.out.println("1 - Hello World");
         System.out.println("0 - Quit");
 
         //Using Scanner Class to get integer as input
@@ -58,42 +52,7 @@ public class Main {   //Everything in Java is inside a class, Squigs, Squigalies
             case 0:
                 return;
             case 1:
-                //Prints message to console/terminal
-                System.out.println("Hello, World of Monkeys!");
-                break;
-            case 2:
-                //Using a Class: AP CSA Unit 2
-                //Run Printy main method with null parameter
-                Printy.main(null);
-                break;
-            case 3:
-                //Using a Class: AP CSA Unit 2
-                //Run MonkeyLoop() constructor and run a method from temporary object, defined in class
-                new MonkeyLoop().printPoem();
-                break;
-            case 4:
-                //Using a Class: AP CSA Unit 2
-                //Run MonkeyList() constructor and run a method from temporary object, defined in class
-                new MonkeyList().print();
-                break;
-            case 5:
-                //Using a Class: AP CSA Unit 2
-                //Create object to run methods from Classy.java
-                MonkeyList ml = new MonkeyList();
-                ml.print();
-                ml.printPoem();
-                break;
-
-            case 6:
-                //Using a Class: AP CSA Unit 2
-                //Run Biny main method with null parameter
-                Biny.main(null);
-                break;
-
-            case 7:
-                //Run Termy main method with null parameter
-                Termy.main(null);
-                break;
+                public static HelloWorld.Main();
 
             default:
                 //Prints error message from console
