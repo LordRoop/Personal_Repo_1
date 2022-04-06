@@ -1,2 +1,3 @@
-Main
-printf "Hello world"
+Main{
+  system.out.println("Hello world");
+}

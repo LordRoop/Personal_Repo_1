@@ -15,7 +15,7 @@ import com.nighthawk.csa.utility.LinkedLists.Stack;
     to handle computer math we often convert strings into reverse polish notation
     to handle errors we perform try / catch or set default conditions to trap errors
      */
-public class Calculator {
+public class Main {
     // Key instance variables
     private final String expression;
     private ArrayList<String> tokens;
@@ -43,7 +43,7 @@ public class Calculator {
     }
 
     // Create a 1 argument constructor expecting a mathematical expression
-    public Calculator(String expression) {
+    public Main(String expression) {
         // original input
         this.expression = expression;
 

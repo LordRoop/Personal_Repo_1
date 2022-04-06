@@ -52,8 +52,8 @@ public class Main {   //Everything in Java is inside a class, Squigs, Squigalies
             case 0:
                 return;
             case 1:
-                public static HelloWorld.Main();
-
+                public HelloWorld.Main();
+            break;
             default:
                 //Prints error message from console
                 System.out.println("Unexpected choice, try again.");
