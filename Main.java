@@ -52,7 +52,7 @@ public class Main {   //Everything in Java is inside a class, Squigs, Squigalies
             case 0:
                 return;
             case 1:
-                public HelloWorld.Main();
+                public HelloWorld.main();
             break;
             default:
                 //Prints error message from console
