@@ -1,3 +1,4 @@
+package src;
 /*
 Creator: Nighthawk Coding Society
 Mini Lab Name: Hello Series, featuring Monkey Jumpers
@@ -52,7 +53,7 @@ public class Main {   //Everything in Java is inside a class, Squigs, Squigalies
             case 0:
                 return;
             case 1:
-                public HelloWorld.main();
+                System.out.println("Hello World!");
             break;
             default:
                 //Prints error message from console

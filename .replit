@@ -1,2 +1,2 @@
-language = "java10"
-run = "javac Main.java; java Main"
+language = "java"
+run = "javac src/Main.java; java src/Main; rm src/*.class"
