@@ -1,5 +1,21 @@
-## Test Prep plans: 
-Include snippets of code into github pages and complete all Challenges this Trimester on [Repl.it](https://replit.com/@JSinghSD/PersonalRepo1#README.md)
-- Do all of the FRQs that I missed in Tri 2, or at least the ones I can.
-- Finally finish the Random Passcode generator that I was supposed to turn in at the end of tri 2.
-- Link to password generator: [Here](https://replit.com/@JSinghSD/CSACollegeboardFRQ)
+## Daily Study Guide
+
+# Monday
+- watch one AP Live video
+- work on Calculator to Brush Up
+
+# Tuesday
+- watch one AP Live video
+- Exam MCQ/FRQ Practice
+
+# Wednesday
+- watch one AP Live video
+- work on Calculator Project
+
+# Thursday
+- watch one AP Live video
+- Memorize the Types of Problems Mr M was talking about
+
+# Friday
+- watch one AP Live video
+- Memorize one or 2 of the 4 types of problems Mr M was Talking about in the FRQ
